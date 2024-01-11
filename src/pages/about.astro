@@ -1,0 +1,53 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+---
+
+<MainLayout>
+    <div class="box">
+        <div class="card shadow-xl glass p-4">
+            <div class="card-body">
+                <header class="flex items-center justify-between">
+                    <h2 class="card-title text-2xl font-bold text-primary" transition:animate="slide">Sobre mi</h2>
+                    <div class="avatar">
+                        <div class="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src="/images/avatar.jpg" />
+                        </div>
+                    </div>
+                </header>
+                <div class="divider"></div>
+                <p class="text-justify">
+                    👋 Hola soy <b>Ángel Zamora</b>, Desarrollador Fullstack con más de <b>6 años</b> de experiencia. 
+                    Enfocado en el desarrollo de software con código limpio y en un marco de buenas prácticas. 
+                    Me especializo en construir soluciones y productos con <b>Typescript, Javascript, Nodejs, React, Svelte, o Vue</b>.🚀
+                </p>    
+                <br>
+                <p class="text-justify">
+                    Apasionado por la tecnología y el café ☕, siempre en búsqueda de retos que permitan mi crecimiento 
+                    profesional. Mi meta es contribuir al desarrollo de software en equipos dinámicos con un enfoque
+                    de alto desempeño.
+
+                    Disfruto innovar, aprender nuevas tecnologías o características y colaborar al open source. Estoy interesado
+                    en el aprendizaje de lenguajes cómo Rust o Go.
+
+                    Si mi perfile te parece interesante, siéntete libre de contactarme via email en <a href="mailto:angeldesweb@gmail.com" class="link link-hover text-primary">angeldesweb@gmail.com.</a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .card  {
+        max-width: 50rem;
+    }
+
+    .box {
+        display: grid;
+        place-content: center;
+        margin-bottom: 2em;
+        width: 100%;
+        z-index: 0;
+    }
+</style>

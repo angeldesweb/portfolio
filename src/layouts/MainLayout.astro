@@ -1,0 +1,39 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import Background from "../components/Background.astro";
+import Navbar from "../components/Navbar.svelte";
+import Footer from "../components/Footer.svelte";
+---
+
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/global.css">
+        <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+        <title>Ángel Zamora</title>
+        <ViewTransitions/>
+    </head>
+    <body class="main">
+        <Background/>
+        <div class="z-[5]">
+            <Navbar client:load/>
+        </div>
+        <div class="flex grow">
+            <slot/>
+        </div>
+        <Footer/>
+    </body>
+</html>
+
+
+
+<style>
+	.main {
+		position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+	}
+
+</style>

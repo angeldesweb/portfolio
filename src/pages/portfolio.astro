@@ -1,0 +1,60 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+    <div class="box">
+        <div class="card shadow-xl glass p-4">
+            <div class="card-body">
+                <header class="flex items-center justify-between">
+                    <h2 class="card-title text-2xl font-bold text-primary" transition:animate="slide">Portafolio</h2>
+                </header>
+                <div class="divider"></div>
+                
+                <span class="text-xl font-bold">¿Dónde está el portafolio?</span>
+                <p class="text-justify">
+                    🤚 ¡Espera, no te vayas! Si has llegado aquí posiblemente quieras ver una colección de 
+                    proyectos bonitos y vistosos, pero que pude haber copiado de algún lugar
+                    y modificado en algunos detalles. Y no, aunque pude haber hecho proyectos propios sin necesidad 
+                    de copiar, esta vez quiero hacer algo diferente, quiero brindar el timeline de mis desarrollos, 
+                    he decidido crear un blog.
+                </p>    
+                <br>
+                <span class="text-xl font-bold">¿Por qué un blog?</span>
+                <p class="text-justify">
+                    Mi interés es que si deseas ver un portafolio, puedas ver que pasos sigo en mis proyectos, qué prácticas,
+                    qué patrones, e incluso, cómo me las ingenio para innovar. Además de que quiero brindar la oportunidad de que
+                    a medida que se actualicen las diferentes tecnologías con las que trabajo, puedas ver cómo me adapto a
+                    cada cambio, a cada actualización. Por ello iré publicando posts que brindarán un panorama más amplio de 
+                    mis conocimiento y manera de trabajar, que a fin de cuentas es la intención de un portafolio.
+                </p>
+                <br>
+                <p>
+                    Sin más que decir te invito a conocer sobre mi trabajo en el enlace a continuación.
+                </p>
+                <br>
+                <p>Saludos cordiales</p>
+                <br>
+                <p class="brand-text">Ángel Zamora</p>
+                <br>
+                <div class="flex w-full justify-center">
+                    <a href="https://angeldesweb-blog.vercel.app/" target="_blank" class="btn btn-outline btn-primary">Ir al blog</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .card  {
+        max-width: 50rem;
+    }
+
+    .box {
+        display: grid;
+        place-content: center;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+</style>

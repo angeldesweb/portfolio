@@ -1,0 +1,62 @@
+---
+import IconButtonLink from '../components/IconButtonLink.svelte';
+import { Cv, Github, Linkedin } from "../icons";
+import MainLayout from "../layouts/MainLayout.astro";
+
+---
+<MainLayout>
+	<div class="cont w-full text-center">
+		<!--  Main section HERO  -->
+		<span
+			class="brand-text text-6xl py-4 font-bold bg-gradient-to-r from-primary via-accent to-secondary text-transparent bg-clip-text"
+		>
+			Ángel Zamora
+		</span>
+		
+		<span class="text-5xl font-bold txt-neutral-content">
+			Desarrollador fullstack
+		</span>
+		<!-- Social links -->
+		<div class="flex gap-4 lg:gap-8 justify-center my-8">
+			<IconButtonLink
+				href="https://docs.google.com/document/d/1pQufuvTTw4aMt827MTy1EZASqUB-jU3kvkuyKdHcrd4/edit?usp=sharing"
+			>
+				<Cv/>
+			</IconButtonLink>
+			<IconButtonLink href="https://linkedin.com/in/angeldesweb">
+				<Linkedin/>
+			</IconButtonLink>
+			<IconButtonLink href="https://github.com/angeldesweb">
+				<Github/>
+			</IconButtonLink>
+		</div>
+	</div>
+</MainLayout>
+
+<style>
+	.cont {
+		padding: 1rem 0;
+		display: grid;
+		place-content: center;
+		height: 70%;
+	}
+
+		.brand-text {
+		animation: animate 3s linear infinite;
+		text-shadow:
+			0 0 0px #0072ff,
+			0 0 500px #0072ff,
+			0 0 75px #0072ff,
+			0 0 100px #0072ff;
+		animation-delay: 1.5s;
+	}
+
+	@keyframes animate {
+		from {
+			filter: hue-rotate(0deg);
+		}
+		to {
+			filter: hue-rotate(360deg);
+		}
+	}
+</style>

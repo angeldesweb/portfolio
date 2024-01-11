@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: brand;
+    src: url('/fonts/brand.otf');
+}
+
+.brand-text {
+    font-family: brand;
+}
+
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 1em;
+    background: #1d232a;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #7480ff;
+    border-radius: 100vh;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #ff52d9;
+}

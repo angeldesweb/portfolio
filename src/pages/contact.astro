@@ -1,0 +1,42 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Gmail  , Telegram} from '../icons';
+---
+
+<MainLayout>
+    <div class="box">
+        <div class="card shadow-xl glass p-4">
+            <div class="card-body">
+                <header class="flex items-center justify-between">
+                    <h2 class="card-title text-2xl font-bold text-primary" transition:animate="slide">Contacto</h2>
+                </header>
+                <div class="divider"></div>
+                
+                <span class="text-xl font-bold">💪 Trabajemos juntos.</span>
+                <p class="text-justify">🤝 Será un placer para mi ponernos en contacto a través de los siguientes medios:</p>
+                <div class="flex w-full justify-center my-4 gap-4">
+                    <a href="mailto:angeldesweb@gmail.com" class="btn btn-outline btn-primary">
+                        <Gmail/> Correo
+                    </a>
+                    <a href="https://t.me/angeldesweb" class="btn btn-outline btn-primary">
+                        <Telegram/> Telegram
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .card  {
+        max-width: 50rem;
+    }
+
+    .box {
+        display: grid;
+        place-content: center;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+</style>
